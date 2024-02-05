@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Inscrição Vaquejada</title>
+</head>
+<body>
+    <h1>Inscrição Vaquejada</h1>
+    <form action="processarInscricao.php" method="post">
+        <!-- Campos do formulário -->
+        <label for="animal_puxador">Animal Puxador:</label>
+        <input type="text" id="animal_puxador" name="animal_puxador" required>
+
+        <label for="nome_completo">Nome Completo:</label>
+        <input type="text" id="nome_completo" name="nome_completo" required>
+
+        <label for="cpf_competidor">CPF Competidor:</label>
+        <input type="text" id="cpf_competidor" name="cpf_competidor" required>
+
+        <label for="apelido_competidor">Apelido Competidor:</label>
+        <input type="text" id="apelido_competidor" name="apelido_competidor" required>
+
+        <label for="proprietario_nome">Nome do Proprietário:</label>
+        <input type="text" id="proprietario_nome" name="proprietario_nome" required>
+
+        <label for="proprietario_cpf">CPF do Proprietário:</label>
+        <input type="text" id="proprietario_cpf" name="proprietario_cpf" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="endereco">Endereço:</label>
+        <input type="text" id="endereco" name="endereco" required>
+
+        <label for="cep">CEP:</label>
+        <input type="text" id="cep" name="cep" required>
+
+        <label for="cidade">Cidade:</label>
+        <input type="text" id="cidade" name="cidade" required>
+
+        <label for="uf">UF:</label>
+        <input type="text" id="uf" name="uf" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" required>
+
+        <!-- Lista de eventos carregada do banco de dados -->
+        <label for="evento">Selecione o Evento:</label>
+        <select id="evento" name="evento_id" required>
+            <?php
+            // Aqui você deve carregar a lista de eventos do banco de dados
+            // e gerar as opções do menu suspenso (select).
+            // Certifique-se de ajustar isso de acordo com a lógica específica do seu projeto.
+            ?>
+            <option value="1">Evento 1</option>
+            <option value="2">Evento 2</option>
+            <option value="3">Evento 3</option>
+        </select>
+
+        <label for="numero_senha">Número da Senha:</label>
+        <input type="text" id="numero_senha" name="numero_senha" required>
+
+        <button type="submit">Enviar Inscrição</button>
+    </form>
+</body>
+</html>
